@@ -1,5 +1,5 @@
 aug_prob: 0.0
-context_length: 128
+context_length: 32
 cosine_annealing_lr_args:
   T_max: 50
   eta_min: 1.0e-06
@@ -13,12 +13,12 @@ loss: !!python/object:gluonts.torch.modules.loss.NegativeLogLikelihood
     beta: 0.0
   __fields_set__: !!set {}
   __private_attribute_values__: {}
-lr: 0.0005
+lr: 0.0001
 magnitude_warp_knot: 4
 magnitude_warp_prob: 0.0
 magnitude_warp_sigma: 0.2
 model_kwargs:
-  context_length: 128
+  context_length: 32
   distr_output: !!python/object:gluonts.torch.distributions.studentT.StudentTOutput
     __init_args__: !!python/object/apply:collections.OrderedDict
     - []
@@ -113,7 +113,7 @@ model_kwargs:
   n_embd_per_head: 16
   n_head: 9
   n_layer: 8
-  num_parallel_samples: 1060
+  num_parallel_samples: 100
   rope_scaling: null
   scaling: mean
   time_feat: true

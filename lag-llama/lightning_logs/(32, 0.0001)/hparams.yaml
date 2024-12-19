@@ -1,0 +1,142 @@
+aug_prob: 0.0
+context_length: 32
+cosine_annealing_lr_args:
+  T_max: 50
+  eta_min: 1.0e-06
+data_id_to_name_map: {}
+freq_mask_rate: 0.1
+freq_mixing_rate: 0.1
+jitter_prob: 0.0
+jitter_sigma: 0.03
+loss: !!python/object:gluonts.torch.modules.loss.NegativeLogLikelihood
+  __dict__:
+    beta: 0.0
+  __fields_set__: !!set {}
+  __private_attribute_values__: {}
+lr: 0.0001
+magnitude_warp_knot: 4
+magnitude_warp_prob: 0.0
+magnitude_warp_sigma: 0.2
+model_kwargs:
+  context_length: 32
+  distr_output: !!python/object:gluonts.torch.distributions.studentT.StudentTOutput
+    __init_args__: !!python/object/apply:collections.OrderedDict
+    - []
+  dropout: 0.0
+  input_size: 1
+  lags_seq:
+  - 0
+  - 7
+  - 8
+  - 10
+  - 11
+  - 12
+  - 13
+  - 14
+  - 19
+  - 20
+  - 21
+  - 22
+  - 23
+  - 24
+  - 26
+  - 27
+  - 28
+  - 29
+  - 30
+  - 34
+  - 35
+  - 36
+  - 46
+  - 47
+  - 48
+  - 50
+  - 51
+  - 52
+  - 55
+  - 57
+  - 58
+  - 59
+  - 60
+  - 61
+  - 70
+  - 71
+  - 72
+  - 83
+  - 94
+  - 95
+  - 96
+  - 102
+  - 103
+  - 104
+  - 117
+  - 118
+  - 119
+  - 120
+  - 121
+  - 142
+  - 143
+  - 144
+  - 154
+  - 155
+  - 156
+  - 166
+  - 167
+  - 168
+  - 177
+  - 178
+  - 179
+  - 180
+  - 181
+  - 334
+  - 335
+  - 336
+  - 362
+  - 363
+  - 364
+  - 502
+  - 503
+  - 504
+  - 670
+  - 671
+  - 672
+  - 718
+  - 719
+  - 720
+  - 726
+  - 727
+  - 728
+  - 1090
+  - 1091
+  - 1092
+  max_context_length: 2048
+  n_embd_per_head: 16
+  n_head: 9
+  n_layer: 8
+  num_parallel_samples: 1060
+  rope_scaling: null
+  scaling: mean
+  time_feat: true
+nonnegative_pred_samples: true
+permutation_max_segments: 5
+permutation_prob: 0.0
+permutation_seg_mode: equal
+prediction_length: 60
+rotation_prob: 0.0
+scaling_prob: 0.0
+scaling_sigma: 0.1
+time_warp_knot: 4
+time_warp_prob: 0.0
+time_warp_sigma: 0.2
+track_loss_per_series: false
+use_cosine_annealing_lr: true
+use_kv_cache: false
+use_single_pass_sampling: false
+weight_decay: 1.0e-08
+window_slice_prob: 0.0
+window_slice_reduce_ratio: 0.9
+window_warp_prob: 0.0
+window_warp_scales:
+- 0.5
+- 2.0
+window_warp_window_ratio: 0.1
